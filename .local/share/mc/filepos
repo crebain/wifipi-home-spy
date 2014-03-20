@@ -1,0 +1,6 @@
+/home/spy/stream_ffmpeg.sh 8;0;703
+/home/spy/.config/systemd/user/spy.service 12;20;424
+/home/spy/www/xsp.webapp 5;13;85
+/lib/systemd/system/network.target 1;0;0
+/lib/systemd/system/sshd.service 4;0;60
+/home/spy/.config/systemd/user/spy.service.d/environment.conf 2;15;25

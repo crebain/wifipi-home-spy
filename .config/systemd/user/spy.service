@@ -1,0 +1,20 @@
+[Unit]
+Description=Spy cam
+After=network-online.target
+After=ntpdate.service
+
+[Service]
+Type=idle
+#Environment="PATH=/usr/bin:/opt/vc/bin"
+#ExecStart=/bin/sh /home/spy/stream_ffmpeg.sh
+#ExecStart=/opt/vc/bin/raspivid -o - -n -t 0 -fps 60 -w 1280 -h 720 -b 1000000
+#ExecStart=/usr/bin/ncat -l -k -e "/opt/vc/bin/raspivid -o - -n -t 0 -fps 60 -w 1280 -h 720 -b 1000000 -awb off -ex antishake" 0.0.0.0 8090
+#ExecStart=/usr/bin/ncat -l -k -e "/opt/vc/bin/raspivid -o - -t 0 -n -fps 60 -w 1280 -h 720 -b 1000000 -pf main -vs" 0.0.0.0 8090
+ExecStart=/usr/bin/ncat -l -k -e "/opt/vc/bin/raspivid -o - -t 0 -fps 30 -w 1280 -h 720 -b 1000000 -pf main -vs" 0.0.0.0 8090
+#ExecStart=/usr/bin/ncat -l -k -e "/opt/vc/bin/raspivid -o -" 0.0.0.0 8090
+Restart=always
+RestartSec=1
+#StandardInput=socket
+
+[Install]
+WantedBy=default.target

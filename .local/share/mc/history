@@ -1,0 +1,44 @@
+[mini_input]
+0=half type name | size | perm
+
+[user-fmt-input]
+0=half type name | size | perm
+
+[edit-word-wrap]
+0=72
+
+[edit-tab-spacing]
+0=8
+
+[cmdline]
+0=
+
+[input-def]
+0=*
+
+[input2]
+0=/home/spy/www/
+
+[Dir Hist New Right Panel]
+0=/home/spy/.config/mc
+1=/home/spy/.config/systemd/user/default.target.wants
+2=/home/spy/.config/systemd/user/spy.service.d
+3=/home/spy/www
+4=/home/spy/.config
+5=/home/spy/.config/systemd
+6=/home/spy/.config/systemd/user
+7=/home/spy
+
+[Dir Hist New Left Panel]
+0=/lib
+1=/lib/systemd
+2=/lib/systemd/system
+3=/home
+4=/
+5=/srv
+6=/srv/http
+7=/srv/http/html
+8=/srv/http/html/xsp/bin
+9=/srv/http/html/xsp/controls
+10=/srv/http/html/xsp
+11=/home/spy
